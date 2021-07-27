@@ -3,10 +3,14 @@ body {
   font-size: 14px;
   color: #0a143a; /* цвет текста*/
 }
-.header {
+.container {
   max-width: 1146px; /* максимальная ширина*/
   margin: auto; /* автоматическое выравнивание по середине*/
+}
+.header {
   padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 .navbar {
   display: flex; /* делаем гибкий блок */
@@ -38,7 +42,6 @@ body {
   padding: 10px 15px;
   cursor: pointer;
 }
-
 .button-link {
   color: inherit;
 }
@@ -73,4 +76,106 @@ body {
 }
 .search-button-text {
   margin-left: 5px;
+}
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+.card-image {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256eeb;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 264px;
+}
+.card-link {
+  text-decoration: none;
+}
+.like {
+  background: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.icone-like {
+  fill: #c4c4c4;
+}
+.icone-like:hover {
+  fill: red;
+}
+.card-price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #0a143a;
+  margin-bottom: 10px;
+  display: block;
+}
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+}
+.service {
+  margin-bottom: 25px;
+}
+.service-title {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+.service-text {
+  max-width: 216px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
 }
